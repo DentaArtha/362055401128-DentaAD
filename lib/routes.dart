@@ -7,9 +7,9 @@ class RouteGenerator {
     // final args = settings.arguments;
     switch (settings.name) {
       case '/':
-        return MaterialPageRoute(builder: (_) => HalamanHome());
+        return MaterialPageRoute(builder: (_) => HalamanSatu());
       case '/start':
-        return MaterialPageRoute(builder: (_) => PageTwo());
+        return MaterialPageRoute(builder: (_) => HalamanDua());
       default:
         return _errorRoute();
     }

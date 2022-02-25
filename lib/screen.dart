@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 
-class HalamanHome extends StatefulWidget {
+class HalamanSatu extends StatefulWidget {
   @override
   _HomePage createState() => _HomePage();
 }
 
-class _HomePage extends State<HalamanHome> {
+class _HomePage extends State<HalamanSatu> {
   final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
@@ -85,7 +85,7 @@ class _HomePage extends State<HalamanHome> {
   }
 }
 
-class PageTwo extends StatelessWidget {
+class HalamanDua extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -106,7 +106,7 @@ class PageTwo extends StatelessWidget {
                           fontSize: 20.0,
                         )),
                     background: Image(
-                      image: NetworkImage('https://images.pexels.com/photos/3735616/pexels-photo-3735616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940'),
+                      image: NetworkImage('https://cdn.pixabay.com/photo/2017/11/20/08/52/gazania-2964818_1280.jpg'),
                       fit: BoxFit.fill,
                     ),
                   ),
