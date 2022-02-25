@@ -21,7 +21,7 @@ class _HomePage extends State<HalamanSatu> {
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: '362055401117',
+      initialValue: '362055401128',
       decoration: InputDecoration(
         hintText: 'Nomor Peserta',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -119,9 +119,9 @@ class HalamanDua extends StatelessWidget {
                         labelColor: Colors.black87,
                         unselectedLabelColor: Colors.grey,
                         tabs: [
-                          new Tab(icon: new Icon(Icons.assignment), text: "List Barang"),
-                          new Tab(icon: new Icon(Icons.money), text: "Harga Barang"),
-                          new Tab(icon: new Icon(Icons.description), text: "Keterangan"),
+                          new Tab(icon: new Icon(Icons.assignment), text: "Daftar Jurusan"),
+                          new Tab(icon: new Icon(Icons.money), text: "Informasi"),
+                          new Tab(icon: new Icon(Icons.description), text: "Cetak Kartu Peserta"),
                         ],
                       ),
                     ]),
@@ -187,28 +187,17 @@ class HalamanDua extends StatelessWidget {
   }
 
   final List barang = [
-    "Serum",
-    "Sunscreen",
-    "Facial Foam",
-    "Day Cream",
-    "Night Cream",
-    "Essence",
-    "Mousturizer",
-    "Eye Cream",
-    "Acne Serum",
-    "Toner",
+    "Teknik Informatika",
+    "Teknik Sipil",
+    "Teknik Mesin",
+    "Agribisnis",
+    "Managemen Bisnis Pariwisata",
   ];
   final List harga = [
-    "Rp 25.000",
-    "Rp 32.000",
-    "Rp 29.000",
-    "Rp 38.000",
-    "Rp 39.000",
-    "Rp 36.000",
-    "Rp 24.000",
-    "Rp 21.000",
-    "Rp 49.000",
-    "Rp 65.000",
+    "Syarat Pendaftaran",
+    "Jadwal SBMPN",
+    "Jadwal PKKMB",
+    "Jadwal Perkuliahan",
   ];
   final List keterangan = [
     "Mencerahkan Kulit Wajah",
