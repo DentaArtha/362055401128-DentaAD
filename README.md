@@ -1,11 +1,11 @@
 # Hello World
+# ini hasil project
+# https://github.com/DentaArtha/362055401128-DentaAD/blob/master/Screenshot%20(683).png
+# https://github.com/DentaArtha/362055401128-DentaAD/blob/master/Screenshot%20(684).png
 
 A new Flutter project.
 
 ## Getting Started
-
-# file:///C:/Users/User/Pictures/Screenshots/Screenshot%20(684).png
-# file:///C:/Users/User/Pictures/Screenshots/Screenshot%20(683).png
 
 This project is a starting point for a Flutter application.
 
