@@ -100,7 +100,7 @@ class HalamanDua extends StatelessWidget {
                   pinned: true,
                   flexibleSpace: FlexibleSpaceBar(
                     centerTitle: true,
-                    title: Text("Alyssa Skincare",
+                    title: Text("Politeknik Negeri Banyuwangi",
                         style: TextStyle(
                           color: Colors.white,
                           fontSize: 20.0,
