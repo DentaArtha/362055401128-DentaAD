@@ -21,7 +21,7 @@ class _HomePage extends State<HalamanSatu> {
     final email = TextFormField(
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
-      initialValue: '362055401128',
+      initialValue: '362055401117',
       decoration: InputDecoration(
         hintText: 'Nomor Peserta',
         contentPadding: EdgeInsets.fromLTRB(20.0, 10.0, 20.0, 10.0),
@@ -121,7 +121,7 @@ class HalamanDua extends StatelessWidget {
                         tabs: [
                           new Tab(icon: new Icon(Icons.assignment), text: "Daftar Jurusan"),
                           new Tab(icon: new Icon(Icons.money), text: "Informasi"),
-                          new Tab(icon: new Icon(Icons.description), text: "Cetak Kartu Peserta"),
+                          new Tab(icon: new Icon(Icons.description), text: "Pembayaran"),
                         ],
                       ),
                     ]),
@@ -134,10 +134,10 @@ class HalamanDua extends StatelessWidget {
                 itemBuilder: (context, index) {
                   return Card(
                     child: ListTile(
-                      title: Text(barang[index], style: TextStyle(fontSize: 25)),
-                      subtitle: Text('Product Barang yang Sedang Trend Saat ini ' + barang[index]),
+                      title: Text(jurusan[index], style: TextStyle(fontSize: 25)),
+                      subtitle: Text('Program Study: ' + jurusan[index]),
                       leading: CircleAvatar(
-                        child: Text(barang[index][0],
+                        child: Text(jurusan[index][0],
                             style: TextStyle(
                               fontSize: 15,
                             )),
@@ -145,16 +145,16 @@ class HalamanDua extends StatelessWidget {
                     ),
                   );
                 },
-                itemCount: barang.length,
+                itemCount: jurusan.length,
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
                   return Card(
                     child: ListTile(
-                      title: Text(harga[index], style: TextStyle(fontSize: 25)),
-                      subtitle: Text(barang[index] + ' memiliki harga ' + harga[index]),
+                      title: Text(informasi[index], style: TextStyle(fontSize: 25)),
+                      subtitle: Text(jurusan[index] + ' Pada tanggal 11 Juli 2030 ' + informasi[index]),
                       leading: CircleAvatar(
-                        child: Text(harga[index][0],
+                        child: Text(informasi[index][0],
                             style: TextStyle(
                               fontSize: 15,
                             )),
@@ -162,16 +162,16 @@ class HalamanDua extends StatelessWidget {
                     ),
                   );
                 },
-                itemCount: harga.length,
+                itemCount: informasi.length,
               ),
               ListView.builder(
                 itemBuilder: (context, index) {
                   return Card(
                     child: ListTile(
-                      title: Text(keterangan[index], style: TextStyle(fontSize: 25)),
-                      subtitle: Text(barang[index] + ' mempunyai fungsi ' + keterangan[index]),
+                      title: Text(pembayaran[index], style: TextStyle(fontSize: 25)),
+                      subtitle: Text(jurusan[index] + ' Biaya pembayarannya :  ' + pembayaran[index]),
                       leading: CircleAvatar(
-                        child: Text(keterangan[index][0],
+                        child: Text(pembayaran[index][0],
                             style: TextStyle(
                               fontSize: 15,
                             )),
@@ -179,36 +179,31 @@ class HalamanDua extends StatelessWidget {
                     ),
                   );
                 },
-                itemCount: keterangan.length,
+                itemCount: pembayaran.length,
               ),
             ])),
       ),
     );
   }
 
-  final List barang = [
+  final List jurusan = [
     "Teknik Informatika",
     "Teknik Sipil",
     "Teknik Mesin",
     "Agribisnis",
     "Managemen Bisnis Pariwisata",
   ];
-  final List harga = [
-    "Syarat Pendaftaran",
+  final List informasi = [
+    "Jadwal Pendaftaran",
     "Jadwal SBMPN",
     "Jadwal PKKMB",
     "Jadwal Perkuliahan",
   ];
-  final List keterangan = [
-    "Mencerahkan Kulit Wajah",
-    "Melindungi wajah dari Paparan Sinar Matahari",
-    "Membersihkan dan Menyegarkan Kulit Wajah"
-        "Melembabkan dan Mencerahkan wajah di Siang Hari",
-    "Melindungi Wajah di Malam Hari",
-    "Merawat Kulit Setiap Hari",
-    "Menjaga Kelembapan Kulit",
-    "Menghindari Adanya Mata Panda",
-    "Membantu Menghilangkan Jerawat pada Kulit",
-    "Membantu Merawat Kecerahan Kulit Wajah",
+  final List pembayaran = [
+    "Rp. 3.000.000",
+    "Rp. 3.000.000",
+    "Rp. 3.000.000",
+    "Rp. 3.000.000",
+    "Rp. 3.000.000",
   ];
 }
