@@ -14,7 +14,7 @@ class _HomePage extends State<HalamanSatu> {
       child: CircleAvatar(
         backgroundColor: Colors.transparent,
         radius: 48.0,
-        child: Image.asset('assets/1.jpg'),
+        child: Image.asset('assets/images/logo-poliwangi.png'),
       ),
     );
 
