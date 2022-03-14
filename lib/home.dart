@@ -7,18 +7,18 @@ class home extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.blue.shade300,
         centerTitle: true,
         title: Text(
           'COVID-19 VIRUS TRACKER',
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.white),
         ),
         actions: [
           IconButton(
               onPressed: () {},
               icon: Icon(
                 Icons.search,
-                color: Colors.black,
+                color: Colors.white,
               ))
         ],
       ),
