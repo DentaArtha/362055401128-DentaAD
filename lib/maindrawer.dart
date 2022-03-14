@@ -30,7 +30,7 @@ class maindrawer extends StatelessWidget {
                     Column(
                       children: [
                         Text(
-                          'Idris Elba',
+                          'Idris Alba',
                           style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                         ),
                         SizedBox(
